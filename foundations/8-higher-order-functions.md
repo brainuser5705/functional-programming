@@ -69,8 +69,9 @@ foldr (-) 0 [1,2,3,4] -- returns -2
 ```
 
 ```haskell
-myFoldr f init [] = []
-myFoldr f init x:xs = 
+myFoldr f init [] = init
+myFoldr f init (x:xs) = f x newValue
+  where newValue = (myFoldr f init xs)
 ```
 
 The results differ from `foldl` depending on the operation.
