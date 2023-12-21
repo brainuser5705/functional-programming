@@ -99,6 +99,18 @@ ones n = take n (cycle [1]) -- function that makes a list of 1s
 -- split list into n groups
 divideGroup list n = zip list (cycle [1..10])
 ```
+9. `init` - returns everything in list except last element
+
+10. `null` - checks if list is empty
+
+11. `maximum`, `minimum`
+
+12. `sum`, `product`
+
+13. `elem` - tells us if element is in the list
+```haskell
+elem 4 [3,4,5,6] -- returns True
+```
 
 All list functions are included in `Data.list` module.
 
