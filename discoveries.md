@@ -63,3 +63,19 @@ collatz n =
             then collatz n*3 + 1
 ```
 This is not valid because it needs an explicit `else` expression.
+
+---
+
+# 12/20/23
+
+- Function application has the highest precedence.
+- We can take a biparameter function and turn it to an infix function (e.g. `div 92 10` = `92 \`div\` 10`
+
+- Functions don't need to be in any particular order
+- `else` statement is mandatory because the `if` statement is an expression and expression always returns something, meaning we can do something like `(if x > 100 then x else x*2) + 1  `
+- function with no parameters is a *defintion/name* e.g. `x = 2` or `let x = 2`
+- functions cannot begin with uppercase letters
+
+- unlike C, characters are not numbers
+
+- lists can be compared in lexiographical order
