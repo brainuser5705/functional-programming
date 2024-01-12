@@ -70,6 +70,7 @@ This is not valid because it needs an explicit `else` expression.
 
 - Function application has the highest precedence.
 - We can take a biparameter function and turn it to an infix function (e.g. `div 92 10` = `92 \`div\` 10`
+    - note that `/` and `div` are no the same, `div` is integer division
 
 - Functions don't need to be in any particular order
 - `else` statement is mandatory because the `if` statement is an expression and expression always returns something, meaning we can do something like `(if x > 100 then x else x*2) + 1  `
